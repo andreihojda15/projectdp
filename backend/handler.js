@@ -1,9 +1,14 @@
 const serverless = require("serverless-http");
 const express = require("express");
 const app = express();
+const client = require('./db/index');
 
 const groupRoutes = require('./routes/group/index');
 const userRoutes = require('./routes/user/index');
+
+client.connect(() => {
+    console.log('Connected to DB');
+});
 
 app.get("/", (req, res, next) => {
   return res.status(200).json({

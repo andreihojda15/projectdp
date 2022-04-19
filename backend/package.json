@@ -4,6 +4,10 @@
   "description": "",
   "dependencies": {
     "express": "^4.17.1",
+    "mongodb": "^4.5.0",
     "serverless-http": "^2.7.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0"
   }
 }
