@@ -1,4 +1,4 @@
-const router = require("express").Router();
+const router = require("express").Router({mergeParams: true});
 
 // get categories from user
 router.post('/:userId/category', (req, res, next) => {

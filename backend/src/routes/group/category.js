@@ -1,4 +1,4 @@
-const router = require("express").Router();
+const router = require("express").Router({mergeParams: true});
 
 // post category in group
 router.post('/:groupId/category', (req, res, next) => {

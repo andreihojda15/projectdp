@@ -1,4 +1,4 @@
-const router = require("express").Router();
+const router = require("express").Router({mergeParams: true});
 
 // post new user
 router.post("/", (req, res, next) => {

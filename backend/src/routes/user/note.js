@@ -1,4 +1,4 @@
-const router = require("express").Router();
+const router = require("express").Router({mergeParams: true});
 
 // post note in user
 router.put('/:userId/category/:categoryId/note', (req, res, next) => {
