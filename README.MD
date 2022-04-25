@@ -14,7 +14,12 @@ All user management actions (create user, change password, update profile) will 
 The vast majority of data will be stored in MongoDB Atlas and the routes of access will be protected via AWS IAM User Roles and Policies.
 
 # Backend
-### Access Link: https://6aqifrp6j8.execute-api.us-east-1.amazonaws.com
+### Access Link: https://vcmvsska7c.execute-api.us-east-1.amazonaws.com/dev
 ### Commands:
  - cd backend
  - serverless deploy
+
+# Frontend Web
+### Access Link: http://razvantamsa-442266.s3-website-us-east-1.amazonaws.com/
+### Commands:
+ - serverless client deploy
