@@ -5,9 +5,48 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: aliceblue;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.registerBar {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  background-color: #619CBD;
+  width: 100%;
+}
+
+.registerForm {
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  text-align: center;
+}
+
+.registerForm form label {
+  display: grid;
+  margin: 20px;
+  grid-template-columns: 140px 160px;
+  justify-content: center;
+}
+
+.registerForm form label input {
+  margin-left: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+input[type=submit]:hover {
+  background-color: aliceblue;
+}
+
+input[type=submit] {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
 }
