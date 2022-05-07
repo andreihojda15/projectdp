@@ -3,7 +3,7 @@ import '../index.css';
 
 function Login() {
   return (
-    <div>
+    <div className="container">
       <div className="loginBar">
         <h1>Login</h1>
       </div>
