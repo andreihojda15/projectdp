@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../index.css';
 
 function Login() {
@@ -7,40 +6,23 @@ function Login() {
     <div>
       <div className="loginBar">
         <h1>Login</h1>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">LandingPage</Link>
-            </li>
-            <li>
-              <Link to="/register">Register</Link>
-            </li>
-            <li>
-              <Link to="/login">Login</Link>
-            </li>
-            <li>
-              <Link to="/forgot-password">ForgotPassword</Link>
-            </li>
-            <li>
-              <Link to="/dashboard">Dashboard</Link>
-            </li>
-            <li>
-              <Link to="/profile">Profile</Link>
-            </li>
-          </ul>
-        </nav>
       </div>
       <div className="loginForm">
         <form>
           <label htmlFor="inputEmail">
             Email Address:
-            <input type="text" id="inputEmail" placeholder="Email" />
+            <input type="text" id="inputEmail" placeholder="email" className="inputs" />
           </label>
           <label htmlFor="inputPass">
             Password:
-            <input type="text" id="inputPass" placeholder="password" />
+            <input type="password" id="inputPass" placeholder="password" className="inputs" />
           </label>
+          <input type="submit" value="Login" />
         </form>
+        <p>
+          Don&apos;t have an account?&nbsp;
+          <a href="/register">Sign in</a>
+        </p>
       </div>
     </div>
   );

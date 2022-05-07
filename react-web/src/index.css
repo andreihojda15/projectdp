@@ -32,14 +32,30 @@ code {
 
 form {
   position: absolute;
-  top: 50%;
-  left: 40%;
+  top: 40%;
+  left: 45%;
 }
 
 form label input {
   margin: 10px;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid black;
 }
 
-form label {
+/* form label {
   display: block;
+} */
+
+input[type=submit] {
+  position: absolute;
+  left: 40%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+p {
+  position: absolute;
+  top: 60%;
+  left: 45%;
 }
