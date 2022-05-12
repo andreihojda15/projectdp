@@ -25,7 +25,16 @@ export default function RegForm() {
           Password:
           <input type="password" id="password" className="border border-black rounded block w-60" />
         </label>
-        <input type="submit" className="bg-white border border-black w-20 mt-4 rounded relative left-1/3" value="Sign in" />
+        <label htmlFor="confPassword" className="py-3 block">
+          Confirm Password:
+          <input type="password" id="confPassword" className="border border-black rounded block w-60" />
+        </label>
+        <input type="submit" className="bg-white border border-black w-20 mt-4 rounded relative left-1/3 hover:bg-slate-200 cursor-pointer" value="Sign in" />
+        <p className="py-4">
+          Already have an account?
+          {' '}
+          <a href="/login" className="text-sky-600 underline hover:text-cyan-400">Log in</a>
+        </p>
       </form>
     </div>
   );

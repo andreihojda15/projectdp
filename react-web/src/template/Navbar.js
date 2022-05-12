@@ -5,12 +5,10 @@ import '../input.css';
 function Auth(props) {
   const { value } = props;
   return (
-    <nav className="bg-cyan-600">
-      <div className="py-10">
-        <p className="text-center font-medium text-white">
-          { value }
-        </p>
-      </div>
+    <nav className="bg-cyan-600 py-8">
+      <p className="text-lg text-center font-medium text-white">
+        { value }
+      </p>
     </nav>
   );
 }
