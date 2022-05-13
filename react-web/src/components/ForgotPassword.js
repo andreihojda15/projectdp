@@ -7,9 +7,13 @@ function ForgotPassword() {
       <Navbar value="Change password" />
       <div className="relative top-52 flex justify-center">
         <form>
-          <label htmlFor="password" className="block py-2">
-            Password:
-            <input type="password" id="password" className="block border-slate-800 border rounded" />
+          <label htmlFor="old-password" className="block py-2">
+            Old Password:
+            <input type="password" id="old-password" className="block border-slate-800 border rounded" />
+          </label>
+          <label htmlFor="new-password" className="block py-2">
+            New Password:
+            <input type="password" id="new-password" className="block border-slate-800 border rounded" />
           </label>
           <label htmlFor="rep-password" className="block py-2">
             Repeat Password:
