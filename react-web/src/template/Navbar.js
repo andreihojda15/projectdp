@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../input.css';
 
-function Auth(props) {
+function Navbar(props) {
   const { value } = props;
   return (
     <nav className="bg-cyan-600 py-8">
@@ -13,12 +13,12 @@ function Auth(props) {
   );
 }
 
-Auth.defaultProps = {
+Navbar.defaultProps = {
   value: 'Navbar',
 };
 
-Auth.propTypes = {
+Navbar.propTypes = {
   value: PropTypes.string,
 };
 
-export default Auth;
+export default Navbar;
