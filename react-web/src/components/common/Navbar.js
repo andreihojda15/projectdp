@@ -1,24 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../input.css';
+import '../../input.css';
 
-function Navbar(props) {
-  const { value } = props;
+function Navbar({ title }) {
   return (
     <nav className="bg-cyan-600 py-8">
       <p className="text-lg text-center font-medium text-white">
-        { value }
+        { title }
       </p>
     </nav>
   );
 }
 
-Navbar.defaultProps = {
-  value: 'Navbar',
-};
-
 Navbar.propTypes = {
-  value: PropTypes.string,
+  title: PropTypes.string.isRequired,
 };
 
 export default Navbar;

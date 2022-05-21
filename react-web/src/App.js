@@ -5,9 +5,11 @@ import {
   Route,
 } from 'react-router-dom';
 
+import GuestTemplate from './components/templates/GuestTemplate';
+
 // components
 import Dashboard from './components/Dashboard';
-import ForgotPassword from './components/ForgotPassword';
+import ChangePassword from './components/ChangePassword';
 import LandingPage from './components/LandingPage';
 import Login from './components/Login';
 import Profile from './components/Profile';
@@ -17,10 +19,31 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+        <Route
+          path="/login"
+          element={(
+            <GuestTemplate title="Login">
+              <Login />
+            </GuestTemplate>
+      )}
+        />
+        <Route
+          path="/register"
+          element={(
+            <GuestTemplate title="Register">
+              <Register />
+            </GuestTemplate>
+      )}
+        />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route
+          path="/forgot-password"
+          element={(
+            <GuestTemplate title="Change Password">
+              <ChangePassword />
+            </GuestTemplate>
+      )}
+        />
         <Route path="/profile" element={<Profile />} />
         <Route path="/" element={<LandingPage />} />
       </Routes>
