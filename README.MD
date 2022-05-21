@@ -22,4 +22,6 @@ The vast majority of data will be stored in MongoDB Atlas and the routes of acce
 # Frontend Web
 ### Access Link: http://razvantamsa-442266.s3-website-us-east-1.amazonaws.com/
 ### Commands:
- - serverless client deploy
+ - cd react-web
+ - npm run build
+ - serverless client deploy -y
