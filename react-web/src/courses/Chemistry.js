@@ -7,7 +7,9 @@ export default function Chemistry() {
   return (
     <div className="">
       <Navbar value="Chemistry notes" />
-      <Note />
+      <div className="flex justify-center gap-10">
+        <Note />
+      </div>
     </div>
   );
 }

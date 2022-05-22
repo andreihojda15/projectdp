@@ -14,7 +14,7 @@ function Navbar(props) {
         </p>
         <p className="absolute right-10 top-10 text-white">Username</p>
         <Link to="/profile">
-          <img src={require('../imgs/user.png')} alt="profile page" className="w-8 hover:cursor-pointer absolute right-0 top-8" />
+          <img src={require('../imgs/user.png')} alt="profile page" className="w-8 hover:cursor-pointer hover:bg-cyan-700 rounded-lg absolute right-0 top-8" />
         </Link>
       </nav>
     );

@@ -7,7 +7,9 @@ export default function Programming() {
   return (
     <div className="">
       <Navbar value="Programming notes" />
-      <Note />
+      <div className="flex justify-center gap-10">
+        <Note />
+      </div>
     </div>
   );
 }

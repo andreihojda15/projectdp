@@ -7,7 +7,9 @@ export default function Grammar() {
   return (
     <div className="">
       <Navbar value="Grammar notes" />
-      <Note />
+      <div className="flex justify-center gap-10">
+        <Note />
+      </div>
     </div>
   );
 }

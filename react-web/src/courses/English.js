@@ -7,7 +7,9 @@ export default function English() {
   return (
     <div className="">
       <Navbar value="English notes" />
-      <Note />
+      <div className="flex justify-center gap-10">
+        <Note />
+      </div>
     </div>
   );
 }
