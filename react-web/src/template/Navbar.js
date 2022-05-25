@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 function Navbar(props) {
   const { value } = props;
-  if (value !== 'Login' || value !== 'Register') {
+  if (value !== 'Login' && value !== 'Register') {
     return (
       <nav className="bg-cyan-600 py-8">
         <p className="text-lg text-center font-medium text-white">
