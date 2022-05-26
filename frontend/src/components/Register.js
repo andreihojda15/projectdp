@@ -3,6 +3,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import '../input.css';
+import { Link } from 'react-router-dom';
 
 // import functions
 import handleChange from '../functions/handleChange';
@@ -77,7 +78,7 @@ export default function Register({ userInput, setUserInput }) {
           <p className="py-4">
             Already have an account?
             {' '}
-            <a href="/login" className="text-sky-600 underline hover:text-cyan-400">Log in</a>
+            <Link to="/login" className="text-sky-600 underline hover:text-cyan-400">Log in</Link>
           </p>
 
         </form>

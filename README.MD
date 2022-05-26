@@ -24,4 +24,4 @@ The vast majority of data will be stored in MongoDB Atlas and the routes of acce
 ### Commands:
  - cd react-web
  - npm run build
- - serverless client deploy -y
+ - serverless client deploy
