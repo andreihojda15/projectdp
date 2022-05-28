@@ -1,9 +1,11 @@
-import React from 'react';
+/* eslint-disable no-unused-vars */
+import { React, useState } from 'react';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
 } from 'react-router-dom';
+import { nanoid } from 'nanoid';
 
 import GuestTemplate from './components/templates/GuestTemplate';
 
@@ -24,6 +26,30 @@ import Physics from './components/courses/Physics';
 import Programming from './components/courses/Programming';
 
 function App() {
+  const [notes, setNotes] = useState([
+    {
+      id: nanoid(),
+      text: 'this is a note',
+      date: '12/06/2021',
+    },
+  ]);
+
+  const addNote = (text) => {
+    const date = new Date();
+    const newNote = {
+      id: nanoid(),
+      text,
+      date: date.toLocaleDateString(),
+    };
+    const newNotes = [...notes, newNote];
+    setNotes(newNotes);
+  };
+
+  const deleteNote = (id) => {
+    const newNotes = notes.filter((note) => note.id !== id);
+    setNotes(newNotes);
+  };
+
   return (
     <Router>
       <Routes>
@@ -33,7 +59,7 @@ function App() {
             <GuestTemplate title="Login">
               <Login />
             </GuestTemplate>
-      )}
+          )}
         />
         <Route
           path="/register"
@@ -41,7 +67,7 @@ function App() {
             <GuestTemplate title="Register">
               <Register />
             </GuestTemplate>
-      )}
+          )}
         />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route
@@ -50,18 +76,18 @@ function App() {
             <GuestTemplate title="Change Password">
               <ChangePassword />
             </GuestTemplate>
-      )}
+          )}
         />
         <Route path="/profile" element={<Profile />} />
         <Route path="/" element={<LandingPage />} />
 
         {/* random subjects dummy data */}
-        <Route path="/chemistry" element={<Chemistry />} />
-        <Route path="/english" element={<English />} />
-        <Route path="/grammar" element={<Grammar />} />
-        <Route path="/math" element={<Math />} />
-        <Route path="/physics" element={<Physics />} />
-        <Route path="/programming" element={<Programming />} />
+        <Route path="/chemistry" element={<Chemistry notes={notes} handleAddNote={addNote} handleDeleteNote={deleteNote} />} />
+        <Route path="/english" element={<English notes={notes} handleAddNote={addNote} handleDeleteNote={deleteNote} />} />
+        <Route path="/grammar" element={<Grammar notes={notes} handleAddNote={addNote} handleDeleteNote={deleteNote} />} />
+        <Route path="/math" element={<Math notes={notes} handleAddNote={addNote} handleDeleteNote={deleteNote} />} />
+        <Route path="/physics" element={<Physics notes={notes} handleAddNote={addNote} handleDeleteNote={deleteNote} />} />
+        <Route path="/programming" element={<Programming notes={notes} handleAddNote={addNote} handleDeleteNote={deleteNote} />} />
         {/* end of dummy data */}
       </Routes>
     </Router>

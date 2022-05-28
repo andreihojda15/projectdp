@@ -27,7 +27,7 @@ function LandingPage() {
             ['Physics', '/physics'],
             ['Grammar', '/grammar'],
           ].map(([subject, url]) => {
-            const img = getRandomInt(7);
+            const img = getRandomInt(11);
             return (
               <Link to={url} className="text-center mr-16 bg-slate-800 text-white rounded" key={subject}>
                 {subject}
