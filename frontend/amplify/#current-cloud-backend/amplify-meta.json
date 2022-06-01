@@ -46,7 +46,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-frontend-dev-133606-deployment/amplify-cfn-templates/auth/frontend98de7112-cloudformation-template.json",
         "logicalId": "authfrontend98de7112"
       },
-      "lastPushTimeStamp": "2022-05-22T11:09:48.432Z",
+      "lastPushTimeStamp": "2022-06-01T14:54:22.411Z",
       "output": {
         "CreatedSNSRole": "arn:aws:iam::367859350018:role/sns98de7112133606-dev",
         "UserPoolId": "us-west-2_YuiiZlXKa",
@@ -57,7 +57,7 @@
         "IdentityPoolName": "frontend98de7112_identitypool_98de7112__dev",
         "UserPoolName": "frontend98de7112_userpool_98de7112"
       },
-      "lastPushDirHash": "4zNptLbriC+XIgFymjIQacV8CU8="
+      "lastPushDirHash": "k3e2PEnZm92QwnspgfQCogCSz4A="
     }
   },
   "hosting": {
@@ -68,7 +68,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-frontend-dev-133606-deployment/amplify-cfn-templates/hosting/template.json",
         "logicalId": "hostingS3AndCloudFront"
       },
-      "lastPushTimeStamp": "2022-05-22T11:09:48.432Z",
+      "lastPushTimeStamp": "2022-06-01T14:54:22.411Z",
       "output": {
         "CloudFrontSecureURL": "https://d3lprdipo8t49f.cloudfront.net",
         "S3BucketSecureURL": "https://frontend-20220522140434-hostingbucket-dev.s3.amazonaws.com",
@@ -79,7 +79,7 @@
         "HostingBucketName": "frontend-20220522140434-hostingbucket-dev",
         "CloudFrontDomainName": "d3lprdipo8t49f.cloudfront.net"
       },
-      "lastPushDirHash": "M7E1XsTw6JsgPTtm8yRjW6vVVQw="
+      "lastPushDirHash": "uxaIyjGCEiUYCjU71KHeJ9g7ECg="
     }
   }
 }

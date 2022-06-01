@@ -1,0 +1,24 @@
+org: razvantamsa
+app: dp-notes-app
+service: auth-be
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  provider:
+  httpApi:
+    cors: true
+  environment:
+    user_pool_id: us-west-2_YuiiZlXKa
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - cognito-idp:*
+      Resource: "*"
+
+functions:
+  api:
+    handler: handler.handler
+    events:
+      - httpApi: '*'
