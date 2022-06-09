@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { Amplify } from 'aws-amplify';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ErrorBoundary from './components/auth/ErrorBoundary';
+import ErrorBoundary from './components/utility/ErrorBoundary';
 import './index.css';
 
 import awsExports from './aws-exports';

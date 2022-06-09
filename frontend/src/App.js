@@ -6,19 +6,18 @@ import {
 } from 'react-router-dom';
 
 // auth
-import RequireAuth from './components/auth/RequireAuth';
-import AuthProvider from './components/auth/AuthProvider';
+import RequireAuth from './components/utility/RequireAuth';
+import AuthProvider from './components/utility/AuthProvider';
 
 // development
 import LoginPage from './components/pages/authentication/Login';
-import GuestTemplatePage from './components/pages/templates/GuestTemplate';
-import LandingPage from './components/pages/common/LandingPage';
+import GuestTemplatePage from './components/templates/GuestTemplate';
+import LandingPage from './components/common/LandingPage';
 import RegisterPage from './components/pages/authentication/Register';
 import ForgotPassword from './components/pages/authentication/ForgotPassword';
 import ConfirmRegistration from './components/pages/authentication/ConfirmRegistration';
 import ErrorPage from './components/pages/authentication/ErrorPage';
-// import LandingPageUser from './components/pages/user/LandingPageUser';
-import UserTemplate from './components/pages/templates/UserTemplate';
+import UserTemplate from './components/templates/UserTemplate';
 
 import Groups from './components/pages/user/Group/Groups';
 import Categories from './components/pages/user/Categories/Categories';

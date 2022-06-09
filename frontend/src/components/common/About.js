@@ -22,8 +22,8 @@ function About() {
             Nullam rutrum eleifend nisi, quis porta ipsum ultrices vel.
           </div>
         </div>
-        <img src={require('../../../imgs/pic4.jpg')} alt="lofi image" className="object-cover  rounded" />
-        <img src={require('../../../imgs/pic5.jpg')} alt="lofi image" className="object-cover  rounded" />
+        <img src={require('../../imgs/pic4.jpg')} alt="lofi image" className="object-cover  rounded" />
+        <img src={require('../../imgs/pic5.jpg')} alt="lofi image" className="object-cover  rounded" />
         <div className="text-sm md:text-lg px:3 md:px-10">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Aenean suscipit tortor eu tristique interdum. Ut ut mi quis odio dictum varius.

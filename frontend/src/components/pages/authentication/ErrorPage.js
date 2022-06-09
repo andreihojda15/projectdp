@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import GuestTemplate from '../templates/GuestTemplate';
-import UserTemplate from '../templates/UserTemplate';
+import GuestTemplate from '../../templates/GuestTemplate';
+import UserTemplate from '../../templates/UserTemplate';
 
-import { AuthContext } from '../../auth/AuthProvider';
+import { AuthContext } from '../../utility/AuthProvider';
 
 function ErrorPage() {
   const [user, setUser, cognitoConfirmed, setCognitoConfirmed] = React.useContext(AuthContext);

@@ -5,7 +5,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { AuthContext } from '../../auth/AuthProvider';
+import { AuthContext } from '../../utility/AuthProvider';
 
 import handleChange from '../../../functions/handleChange';
 

@@ -3,7 +3,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
-import { AuthContext } from '../auth/AuthProvider';
+import { AuthContext } from '../utility/AuthProvider';
 import userImage from '../../imgs/user.jpg';
 
 function AuthNavbar() {

@@ -13,8 +13,6 @@ const cognitoUser = {
   phone_number: ['Phone Number', '+40733896986'],
 };
 
-const arrDemo = ['UPT', 'FCSB', 'Zahop', 'Bozss'];
-
 function Profile() {
   const [hidden, setHidden] = useState('hidden');
 
